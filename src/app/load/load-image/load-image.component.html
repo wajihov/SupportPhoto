@@ -1,0 +1,24 @@
+<div class="container">
+    <form action="">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <img [src]="url" height="200" class="rounded mx-auto d-block"> <br />
+            <input type='file' (change)="onSelectFile($event)">
+        </div>
+
+
+
+        <div class="mb-3">
+            <label for="upload">
+                <img [src]="url" height="200" class="rounded mx-auto d-block"> <br />
+                <span class="bi bi-cloud-arrow-up-fill" style="font-size:50px ;" aria-hidden="true"></span>
+                <input type='file' id="upload" style="display: none;" (change)="onSelectFile($event)" />
+            </label>
+        </div>
+
+
+    </form>
+</div>
